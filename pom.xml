@@ -56,5 +56,6 @@
 		<module>SpringBoot-SpringCloud-ZuulService</module>
 		<module>SpringBoot-SpringCloud-ConfigService</module>
 		<module>SpringBoot-SpringCloud-ConfigClient</module>
+		<module>SpringBoot-SpringCloud-Config-EurekaService</module>
 	</modules>
 </project>
