@@ -57,5 +57,11 @@
 		<module>SpringBoot-SpringCloud-ConfigService</module>
 		<module>SpringBoot-SpringCloud-ConfigClient</module>
 		<module>SpringBoot-SpringCloud-Config-EurekaService</module>
+		<module>
+			SpringBoot-SpringCloud-Config-EurekaConfigClient
+		</module>
+		<module>
+			SpringBoot-SpringCloud-Config-EurekaConfigService
+		</module>
 	</modules>
 </project>
