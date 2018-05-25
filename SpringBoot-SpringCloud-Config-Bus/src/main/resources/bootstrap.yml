@@ -1,0 +1,34 @@
+server:
+  port: 9963
+
+spring:
+  #配置rabbitmq
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: yd
+    password: yd
+    
+
+  application:
+    name: my-config
+  cloud:
+    config:
+      profile: dev
+      label: master
+      discovery:
+        ##从配置中心读取文件
+        enabled: true
+        #配置中心的servieId，即服务名
+        ##这时发现，在读取配置文件不再写ip地址，而是服务名，这时如果配置服务部署多份，通过负载均衡，从而高可用。
+        service-id: eureka-config-server
+      
+eureka:
+  client:
+    ##指定服务配置中心,将其注册微到服务注册中心，作为Eureka客户端
+    service-url:
+      defaultZone: http://localhost:9960/eureka/
+      
+management:
+  security:
+    enabled: false

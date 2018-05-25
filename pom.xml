@@ -63,5 +63,6 @@
 		<module>
 			SpringBoot-SpringCloud-Config-EurekaConfigService
 		</module>
+		<module>SpringBoot-SpringCloud-Config-Bus</module>
 	</modules>
 </project>
